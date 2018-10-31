@@ -36,6 +36,7 @@ class Kernel extends HttpKernel
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
+        //REQUISIÇÕES POR MINUTO PARA AUMENTAR OU DIMINUIR, BASTA MUDAR O VALOR DE 60,1
         'api' => [
             'throttle:60,1',
             'bindings',
