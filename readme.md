@@ -7,6 +7,11 @@
 AQUI VOCÊ APRENDE ALGUNS CONHECIMENTOS DE WEB SERVICES COM PHP E LARAVEL
 </p>
 
+<p align="center">
+CÓDIGO DE CONFIGURAÇÃO NO GITHUB
+https://github.com/tymondesigns/jwt-auth/wiki
+</p>
+
 ## Curso realizado pelo site: www.especializati.com.br
 
 ## LARAVEL - WIKIPEDIA
