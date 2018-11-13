@@ -4,6 +4,7 @@ $this->group(['prefix' => 'v1'], function() {
     
     //CRIANDO TOKENS
     $this->post('auth', 'Auth\AuthApiController@authenticate');
+    $this->post('auth-refresh', 'Auth\AuthApiController@refreshToken');
 
     //AUTENTICANTO COM O MIDDLEWARE JWT.AUTH
     $this->group(['middleware' => 'jwt.auth'], function() {
