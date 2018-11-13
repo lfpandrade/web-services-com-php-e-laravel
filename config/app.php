@@ -181,6 +181,11 @@ return [
          * API DE AUTENTICAÇÃO
          */
         Tymon\JWTAuth\Providers\JWTAuthServiceProvider::class,
+        
+        /**
+         * CORS LARAVEL
+         */
+        Barryvdh\Cors\ServiceProvider::class,
 
     ],
 
