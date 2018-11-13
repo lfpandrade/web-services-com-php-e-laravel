@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jquery Ajax</title>
+        <meta charset="UTF-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    </head>
+    <body>
+        <button class="btn_request">Enviar Requisição</button>
+
+        <script>
+            $(function () {
+                var token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjEsImlzcyI6Imh0dHA6Ly8xOTIuMTY4LjAuMTA1L1RyZWluYW1lbnRvcy9sYXJhdmVsLWFwaS9wdWJsaWMvYXBpL3YxL2F1dGgiLCJpYXQiOjE1NDIxNDk1MDIsImV4cCI6MTU0MjE1MzEwMiwibmJmIjoxNTQyMTQ5NTAyLCJqdGkiOiJuRXJ0bVlRZlpmU05LejZuIn0.IYUKEphI5Zz1IQDtcIbXqOHK11WOUBakXyxquaq2He8';
+                $('.btn_request').click(function () {
+                    $.ajax({
+                        url: 'http://192.168.0.105/Treinamentos/laravel-api/public/api/v1/products',
+                        method: 'GET',
+                        data: {'token': token}
+                    }).done(function (data) {
+                        alert('Sucesso!');
+                    }).fail(function () {
+                        alert('Fail...');
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>
